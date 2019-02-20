@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  BatchQRCode
+//
+//  Created by 方景琦 on 2017/6/21.
+//  Copyright © 2017年 miracle. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef __OBJC__
+
+
+#import "NSDate+Util.h"
+#import "SVProgressHUD.h"
+#import <YYKit/YYKit.h>
+#import "IBToolsColorCenter.h"
+
+
+#endif
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+
+#define CACHENAME @"TJHDB"
+
+#define CACHEKEY @"TJHDBKEY"
+
+
+
+//rgb颜色(十六进制)
+#define UIColorFromHexValue(HexValue) [UIColor colorWithRed:((float)((HexValue & 0xFF0000) >> 16))/255.0 green:((float)((HexValue & 0xFF00) >> 8))/255.0 blue:((float)(HexValue & 0xFF))/255.0 alpha:1.0]
+
+
+
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (4.0.8)
+  - pop (1.0.9)
+  - SVProgressHUD (2.0.4)
+  - WZLBadge (1.2.5)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - pop
+  - SVProgressHUD
+  - WZLBadge
+  - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  WZLBadge: 16c08aa0a645e2591690f21cbcb410a3d878c7ac
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 1fbbfa7db4501d96eda1df192547692557f2186a
+
+COCOAPODS: 1.2.0.beta.1

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="DeviceStockOutTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-7-8 14:13:34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qje-xI-gpH">
+                        <rect key="frame" x="182" y="7" width="128" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广东药科大学" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fh-LO-Av6">
+                        <rect key="frame" x="25" y="5" width="104" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.50588235290000005" green="0.61176470589999998" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="201704281101等56条设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvU-Xl-lz8">
+                        <rect key="frame" x="25" y="40.5" width="201" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afD-zE-O1O">
+                        <rect key="frame" x="10" y="10" width="10" height="10"/>
+                        <color key="backgroundColor" red="0.23921568630000001" green="0.66666666669999997" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="9vg-X3-mDK"/>
+                            <constraint firstAttribute="width" constant="10" id="RXA-3i-f1q"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Fh-LO-Av6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0Mg-8l-mXb"/>
+                    <constraint firstItem="qje-xI-gpH" firstAttribute="centerY" secondItem="2Fh-LO-Av6" secondAttribute="centerY" id="CFg-hC-Js4"/>
+                    <constraint firstAttribute="trailing" secondItem="qje-xI-gpH" secondAttribute="trailing" constant="10" id="FBK-ON-usO"/>
+                    <constraint firstItem="2Fh-LO-Av6" firstAttribute="leading" secondItem="afD-zE-O1O" secondAttribute="trailing" constant="5" id="L4U-wz-CXg"/>
+                    <constraint firstItem="2Fh-LO-Av6" firstAttribute="centerY" secondItem="afD-zE-O1O" secondAttribute="centerY" id="MDg-jO-Lb0"/>
+                    <constraint firstItem="GvU-Xl-lz8" firstAttribute="top" secondItem="2Fh-LO-Av6" secondAttribute="bottom" constant="15" id="UKh-qt-zyP"/>
+                    <constraint firstItem="afD-zE-O1O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jqF-0z-AxI"/>
+                    <constraint firstItem="GvU-Xl-lz8" firstAttribute="leading" secondItem="2Fh-LO-Av6" secondAttribute="leading" id="m4S-hj-VE6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="GvU-Xl-lz8" id="IfD-7A-jxY"/>
+                <outlet property="dateLabel" destination="qje-xI-gpH" id="Hh5-SO-wDT"/>
+                <outlet property="organizationNameLabel" destination="2Fh-LO-Av6" id="7Oe-SL-8Ch"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="33.5"/>
+        </tableViewCell>
+    </objects>
+</document>
